@@ -1,0 +1,227 @@
+﻿body{
+	font-family:"Times New Roman", Times, serif;
+	background-image: url("images/background/fone-1.png");
+	background-attachment: fixed;
+}
+ul{
+	list-style-type:none;
+}
+.menu li {
+	border-radius: 20px;
+	display: inline-block; /* Строчно-блочные элементы */
+	background-color: #CA181A; /* Цвет фона */
+    margin-right: 3px; /* Расстояние между пунктами меню */
+    -webkit-transform: skewX(-30deg); /* Для Safari и Chrome */
+    -moz-transform: skewX(-30deg); /* Для Firefox */
+    -o-transform: skewX(-30deg); /* Для Opera */
+    -ms-transform: skewX(-30deg); /* Для IE */
+    transform: skewX(-30deg); /* CSS3 */
+}
+.menu li ul{
+	display:none;
+	position:absolute;
+	padding:0;
+}
+.menu li ul li{
+	float:none;
+}
+#romb,
+.menu li a  {
+    color: #fff; /* Цвет ссылок */
+    display: block; /* Блочный элемент */
+    padding: 15px 15px 30px 15px; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    -webkit-transform: skewX(30deg); /* Для Safari и Chrome */
+    -moz-transform: skewX(30deg); /* Для Firefox */
+    -o-transform: skewX(30deg); /* Для Opera */
+    -ms-transform: skewX(30deg); /* Для IE */
+    transform: skewX(30deg); /* CSS3 */
+}
+.menu ul li a{
+	color:lime;
+	display:block;
+	padding: 15px 15px 30px 15px;
+	width:200px;
+}
+li:hover{
+    background: lime; /* Цвет фона при наведении курсора мыши */
+}
+.menu li:hover ul{
+	display:block;
+}
+img {
+	width:16px;
+	height:18px;
+}
+.odyn{ /*Текс меню*/
+	text-decoration:none;
+	float:left;
+	color:navy;
+}
+#emblem { /*Эмблема сайта*/
+	position: absolute;
+	top: 2px;
+	right: 25px;
+	font-family: "Comic Sans", cursive;
+	font-size: 45px;
+	font-weight: 500px;	
+	color: #48180a;
+}
+#logo{
+	font-family: "Comic Sans", cursive;
+	font-size: 70px;
+	margin:10px;
+	font-weight: 200px;	
+	color: #48180a;
+}
+#textik {
+	font-family: "Comic Sans", cursive;
+	font-size:20px;
+	font-weight: 200px;	
+	color: #48180a;
+}
+.text1 { /*Текс в разделе Контакты*/
+	font-family: "Comic Sans", cursive;
+	font-size:20px;
+	font-weight: 200px;	
+	color: #48180a;
+	text-align: center;
+}
+.phone-icon { /*Иконки в разделе Контакты*/
+	width:25px;
+	height:25px;
+}
+.text2{ /*Текс в разделе Контакты*/
+	font-family: "Comic Sans", cursive;
+	font-size:15px;
+	font-weight: 200px;	
+	color: #48180a;
+	padding-left:20px;
+}
+.text3{ /*Текс в footer(в подвале)*/
+	font-family: "Comic Sans", cursive;
+	font-size:10px;
+	font-weight: 200px;	
+	color: #48180a;
+	padding-left:20px;
+	text-align:center;
+}
+div.content{
+	padding:10px;
+	margin: 0 auto;
+	background-color:BurlyWood;
+	border-radius:15px;
+	min-width:1010px;
+	max-width:1010px;
+}
+#content {
+	text-align:center;
+	font-family:"Comic Sans", cursive;
+	margin-bottom:20px;
+	color:#48180a;
+}
+img.doublepicture{ /*Стили для картинок на Главной странице*/
+    padding:0 auto;
+	margin: 0 auto;
+	min-width:1010px;
+	max-width:1010px;
+	min-height:505px;
+	max-height:505px;
+	border-radius: 50px; 
+}
+img.solopicture{
+	width:40px;
+	height:40px;
+}
+img.solopicture{
+-webkit-animation-name: spin;
+    -webkit-animation-duration: 10000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 10000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 10000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+input.user{/*Фон и цвет вводимого текста в полях для ввода Поиска и Логина с Паролем*/
+	color:MediumBlue;
+	background-color:Khaki;
+	border-radius: 10px;
+	-webkit-box-shadow:0 0 10px #666;
+    -moz-box-shadow:0 0 10px #666;
+    box-shadow:0 0 10px #666;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="submit"]:focus,
+input[type="search"]:focus{
+	outline:none;
+}
+form{ /*Форма в футере для пароля и поиска*/
+    display:inline-block;
+}
+img.tortu{
+	width:400px;
+	height:250px;
+	padding-right:20px;
+	transition:0,4s;
+}
+img.tortu:hover{
+	transform: scale(1.15, 1.15);
+}
+img.triplepicture{ /*Стили для картинок на Главной странице*/
+    padding:0 auto;
+	margin: 0 auto;
+	min-width:550px;
+	max-width:550px;
+	min-height:872px;
+	max-height:872px;
+	border-radius: 50px;
+}
+img.fourlepicture{
+	padding:0 auto;
+	margin: 0 auto;
+	min-width:640px;
+	max-width:640px;
+	min-height:550px;
+	max-height:550px;
+	border-radius:50px;
+}
+img.fivelepicture{
+	padding:0 auto;
+	margin: 0 auto;
+	min-width:700px;
+	max-width:700px;
+	min-height:360px;
+	max-height:360px;
+	border-radius:50px;
+}
